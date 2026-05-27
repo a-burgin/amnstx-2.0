@@ -1,3 +1,0 @@
-import Link from 'next/link';
-import { BUSINESS_NAME, SHORT_NAME, PHONE, EMAIL, BOOKING_LINK } from './config';
-export default function Footer(){return <footer className="footer"><div className="footer-inner"><div><h2>{BUSINESS_NAME}</h2><p className="muted">{SHORT_NAME} serves Dallas-Fort Worth with mobile notary appointments and Texas statewide remote online notarization.</p></div><div><h3>Contact</h3><p>{PHONE}</p><p>{EMAIL}</p></div><div><h3>Quick Links</h3><p><Link href="/pricing">Pricing</Link></p><p><Link href="/accepted-ids">Accepted IDs</Link></p><p><a href={BOOKING_LINK}>Book Appointment</a></p></div></div></footer>}
