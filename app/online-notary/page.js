@@ -1,4 +1,0 @@
-
-export default function OnlineNotary(){
- return <><section className="page-hero"><div className="container"><h1>Online Notary</h1><p>Remote online notarization for eligible Texas documents through a secure online session.</p><p><a className="btn btn-primary" href="https://app.bluenotary.us/business/register?referralCode=5ujkkgs0s">Book Online Appointment</a></p></div></section><section className="section"><div className="container grid-3"><div className="card"><h3>Secure video session</h3><p>Signer appears online through a secure platform with ID verification.</p></div><div className="card"><h3>Texas statewide</h3><p>Online appointments are available for eligible Texas notarizations.</p></div><div className="card"><h3>Valid ID required</h3><p>Every signer must present acceptable identification.</p></div></div></section></>
-}
