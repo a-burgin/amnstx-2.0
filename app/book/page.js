@@ -1,0 +1,2 @@
+import { BOOKING_LINK, PHONE_TEL } from '../../components/config';
+export default function Book(){return <section className="simple-page"><div className="eyebrow">Book</div><h1 className="title">Book your notary appointment.</h1><p className="subtitle">Choose online booking or call now for mobile appointment questions.</p><div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}><a className="btn primary" href={BOOKING_LINK}>Book Appointment</a><a className="btn cyan" href={`tel:${PHONE_TEL}`}>Call Now</a></div></section>}
