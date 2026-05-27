@@ -1,4 +1,0 @@
-
-import AcceptedIdChecker from "../../components/AcceptedIdChecker";
-import { AcceptedIdPreview, FAQBlock, CTA } from "../../components/Sections";
-export default function AcceptedIdsPage(){return <><section className="page-hero"><div className="container"><h1>Accepted IDs</h1><p>Every signer must be properly identified before notarization. Bring a current, acceptable ID and contact us before booking if your ID is expired or you are unsure what to use.</p></div></section><section className="section"><div className="container"><div className="section-head"><p className="eyebrow">ID Checklist</p><h2>Check your ID before the appointment.</h2><p>Expired ID may not be enough by itself. A credible witness may be possible only when requirements are met.</p></div><AcceptedIdChecker/></div></section><AcceptedIdPreview/><FAQBlock/><CTA/></>}
