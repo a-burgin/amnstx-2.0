@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0d1117"><title>Notary Tools | AMNS TX</title><meta name="description" content="Quote calculator, document readiness checker, and ID checker for AMNS TX clients."><link rel="stylesheet" href="assets/styles.css"><script defer src="assets/script.js"></script></head><body><div class="topbar">Serving Dallas–Fort Worth in person & Texas statewide online</div>
+<header class="site-header">
+<a class="logo" href="index.html"><span>A</span><div><strong>AMNS TX</strong><small>A Mobile Notary Service</small></div></a>
+<button class="menu-btn" aria-label="Open menu">☰</button>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="mobile-notary.html">Mobile Notary</a>
+<a href="online-notary.html">Online Notary</a>
+<a href="pricing.html">Pricing</a>
+<a href="tools.html">Notary Tools</a>
+<a href="faq.html">FAQ</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a class="nav-cta" href="booking.html">Book Now</a>
+</nav>
+</header><main>
+<section class="page-hero"><span class="tag">Notary Tools</span><h1>Check your quote, document readiness, and ID before you book.</h1><p>These tools help you prepare faster. Final approval and pricing are always confirmed before the appointment.</p></section>
+
+<section class="section tool-section">
+  <div class="section-head"><span class="tag">Quote Calculator</span><h2>Estimate your appointment total.</h2><p>Select your appointment type and details. This is an estimate only.</p></div>
+  <div class="tool-card">
+    <label>Appointment Type<select id="quoteType"><option value="traditional">Traditional / In-person, no travel</option><option value="mobile">Mobile Notary</option><option value="online">Online Notary</option></select></label>
+    <label>Number of notarized first signatures / certificates<input id="sigCount" type="number" min="1" value="1"></label>
+    <label>Additional signatures on same certificate<input id="addSigCount" type="number" min="0" value="0"></label>
+    <label>Estimated travel/convenience fee, if mobile<input id="travelFee" type="number" min="0" value="0"></label>
+    <label>Printing/scanning/copying/other fees, if any<input id="extraFee" type="number" min="0" value="0"></label>
+    <button class="btn primary" onclick="calculateQuote()">Calculate Estimate</button>
+    <div id="quoteResult" class="result-box">Your estimate will appear here.</div>
+  </div>
+</section>
+
+<section class="section tool-section">
+  <div class="section-head"><span class="tag">Can We Notarize It?</span><h2>Document readiness checker.</h2><p>This does not replace legal advice. It helps identify common issues before booking.</p></div>
+  <div class="tool-card checklist-form">
+    <label><input type="checkbox" id="docComplete"> My document is complete with no blank required sections.</label>
+    <label><input type="checkbox" id="notaryWording"> My document has notary wording/certificate, or I know which notarial act is needed.</label>
+    <label><input type="checkbox" id="signerPresent"> Every signer will personally appear before the notary.</label>
+    <label><input type="checkbox" id="validIdDoc"> Every signer has valid acceptable identification.</label>
+    <label><input type="checkbox" id="willingAware"> Every signer is willing, alert, and aware of what they are signing.</label>
+    <button class="btn primary" onclick="checkDocument()">Check Document Readiness</button>
+    <div id="docResult" class="result-box">Your result will appear here.</div>
+  </div>
+</section>
+
+<section class="section tool-section">
+  <div class="section-head"><span class="tag">ID Checker</span><h2>Is this ID likely acceptable?</h2><p>A valid government-issued photo ID is usually required. Final acceptance is confirmed at appointment.</p></div>
+  <div class="tool-card">
+    <label>ID Type<select id="idType"><option value="txdl">Texas Driver License / State ID</option><option value="uspass">U.S. Passport</option><option value="military">U.S. Military ID</option><option value="foreignpass">Foreign Passport</option><option value="expired">Expired ID</option><option value="photo">Photo of ID / Screenshot</option><option value="paper">Paper temporary ID only</option><option value="none">No ID available</option></select></label>
+    <label><input type="checkbox" id="idCurrent"> ID is current/not expired</label>
+    <label><input type="checkbox" id="idPhoto"> ID has a photo and signature or reliable identifying information</label>
+    <button class="btn primary" onclick="checkId()">Check ID</button>
+    <div id="idResult" class="result-box">Your result will appear here.</div>
+  </div>
+</section>
+<section class="note"><strong>Reminder:</strong> AMNS TX cannot give legal advice or decide what document you need. If your document is incomplete, missing notary wording, or you are unsure which notarial act is required, contact the document issuer or an attorney before booking.</section>
+</main><section class="cta"><h2>Need it notarized today?</h2><p>Call, text, or book online for mobile and online notary service across DFW and statewide online in Texas.</p><a class="btn primary" href="booking.html">Book Appointment</a></section>
+<footer>
+<div><a class="logo footer-logo" href="index.html"><span>A</span><div><strong>AMNS TX</strong><small>A Mobile Notary Service</small></div></a><p>Fast, professional mobile and online notarization when and where you need it. Serving Dallas–Fort Worth in person and Texas statewide online.</p></div>
+<div><h4>Contact</h4><p><a href="tel:4692155434">469-215-5434</a><br><a href="sms:4692155434">Text 469-215-5434</a><br><a href="mailto:info@amnstx.com">info@amnstx.com</a><br><a href="https://www.amnstx.com">www.amnstx.com</a></p></div>
+<div><h4>Important Notice</h4><p>AMNS TX is not a law firm and cannot provide legal advice, choose documents, draft documents, or explain legal rights. Clients must provide complete documents and valid identification.</p></div>
+</footer>
+<div class="quick-actions" aria-label="Quick contact actions">
+  <a href="tel:4692155434">Call</a>
+  <a href="sms:4692155434">Text</a>
+  <a href="booking.html">Book Online</a>
+</div></body></html>
