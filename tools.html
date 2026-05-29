@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1117">
+<title>Notary Tools | AMNS TX</title>
+<meta name="description" content="Quote calculator, document readiness checker, and Texas ID checker for AMNS TX clients.">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/script.js"></script>
+</head>
+<body><div class="topbar">Serving Dallas–Fort Worth in person & Texas statewide online</div>
+<header class="site-header">
+<a class="logo" href="index.html"><span>A</span><div><strong>AMNS TX</strong><small>A Mobile Notary Service</small></div></a>
+<button class="menu-btn" aria-label="Open menu">☰</button>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="mobile-notary.html">Mobile Notary</a>
+<a href="online-notary.html">Online Notary</a>
+<a href="pricing.html">Pricing</a>
+<a href="tools.html">Notary Tools</a>
+<a href="business-services.html">Business</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+<a class="nav-cta" href="booking.html">Book Now</a>
+</nav>
+</header><main>
+<section class="page-hero"><span class="tag">Notary Tools</span><h1>Check your quote, document readiness, and ID before you book.</h1><p>These tools help you prepare faster. If your checklist looks ready, call or text AMNS TX to confirm appointment details and final pricing.</p></section>
+
+<section class="section tool-section">
+  <div class="section-head"><span class="tag">Quote Calculator</span><h2>Estimate your mobile or online appointment total.</h2><p>Select your appointment type and details. This is an estimate only.</p></div>
+  <div class="tool-card">
+    <label>Appointment Type<select id="quoteType"><option value="mobile">Mobile Notary</option><option value="online">Online Notary</option></select></label>
+    <label>Number of notarized signatures / certificates<input id="sigCount" type="number" min="1" value="1"></label>
+    <label>Additional signatures on same certificate<input id="addSigCount" type="number" min="0" value="0"></label>
+    <label>Estimated travel/convenience fee, if mobile<input id="travelFee" type="number" min="0" value="0"></label>
+    <label>Printing/scanning/copying/other fees, if any<input id="extraFee" type="number" min="0" value="0"></label>
+    <button class="btn primary" onclick="calculateQuote()">Calculate Estimate</button>
+    <div id="quoteResult" class="result-box">Your estimate will appear here.</div>
+  </div>
+</section>
+
+<section class="section tool-section">
+  <div class="section-head"><span class="tag">Can We Notarize It?</span><h2>Document readiness checker.</h2><p>This tool helps identify common appointment issues before booking. It does not replace legal advice.</p></div>
+  <div class="tool-card checklist-form">
+    <label><input type="checkbox" id="docComplete"> My document is complete with no blank required sections.</label>
+    <label><input type="checkbox" id="notaryWording"> My document has notarial wording/certificate, or the receiving agency has told me which notarial act is needed.</label>
+    <label><input type="checkbox" id="signerPresent"> Every signer will personally appear before the notary.</label>
+    <label><input type="checkbox" id="validIdDoc"> Every signer has acceptable identification or an approved legal identity option.</label>
+    <label><input type="checkbox" id="willingAware"> Every signer is willing, alert, aware, and understands they are signing the document.</label>
+    <label><input type="checkbox" id="witnessReady"> Any required witnesses will be present and have acceptable ID.</label>
+    <button class="btn primary" onclick="checkDocument()">Check Document Readiness</button>
+    <div id="docResult" class="result-box">Your result will appear here.</div>
+  </div>
+</section>
+
+<section class="section tool-section">
+  <div class="section-head"><span class="tag">Texas ID Checker</span><h2>Is this ID acceptable for notarization?</h2><p>Texas notarization requires the signer to be identified by a legally acceptable method. Final acceptance is confirmed at the appointment.</p></div>
+  <div class="tool-card">
+    <label>ID / Identity Method<select id="idType"><option value="txdl">Current Texas Driver License / State ID</option><option value="uspass">Current U.S. Passport / Passport Card</option><option value="military">Current U.S. Military ID</option><option value="othergov">Current government-issued photo ID</option><option value="foreignpass">Foreign Passport</option><option value="personally">Personally known by the notary</option><option value="credible">Credible witness available</option><option value="expired">Expired ID</option><option value="photo">Photo / screenshot / copy of ID only</option><option value="paper">Temporary paper ID only</option><option value="schoolwork">Student ID or work badge</option><option value="none">No ID available</option></select></label>
+    <label><input type="checkbox" id="idCurrent"> ID is current/not expired if using an ID document.</label>
+    <label><input type="checkbox" id="idPhoto"> ID includes a photo and identifying information.</label>
+    <button class="btn primary" onclick="checkId()">Check ID</button>
+    <div id="idResult" class="result-box">Your result will appear here.</div>
+  </div>
+</section>
+
+<section class="section two-col"><div><h2>No acceptable ID?</h2></div><div><p>If a signer does not have acceptable ID, the document may still be notarized only if Texas law allows another identity method, such as the signer being personally known to the notary or being identified by a credible witness. A credible witness must be able to swear or affirm the signer’s identity and must meet applicable requirements.</p><p>If you do not have acceptable ID, text AMNS TX before booking. We can explain appointment options, but we cannot bend identification rules or notarize without legally acceptable identification.</p><div class="actions"><a class="btn primary" href="sms:4692155434">Text AMNS TX</a><a class="btn" href="tel:2144715358">Call AMNS TX</a></div></div></section>
+<section class="note"><strong>Reminder:</strong> AMNS TX cannot provide legal advice or determine what document you need. If your document is incomplete, missing notarial wording, or you are unsure which notarial act is required, contact the document issuer or an attorney before booking.</section>
+</main><section class="cta"><h2>Ready to schedule your notary appointment?</h2><p>Call, text, or book online for professional mobile and online notary services across DFW and statewide online in Texas.</p><div class="actions center"><a class="btn primary" href="booking.html">Book Appointment</a><a class="btn" href="tel:2144715358">Call 214-471-5358</a><a class="btn ghost" href="sms:4692155434">Text 469-215-5434</a></div></section>
+<footer>
+<div><a class="logo footer-logo" href="index.html"><span>A</span><div><strong>AMNS TX</strong><small>A Mobile Notary Service</small></div></a><p>Professional mobile and online notarization for individuals, families, businesses, property teams, healthcare facilities, real estate professionals, and legal offices.</p></div>
+<div><h4>Contact</h4><p><strong>Call:</strong> <a href="tel:2144715358">214-471-5358</a><br><strong>Text:</strong> <a href="sms:4692155434">469-215-5434</a><br><a href="mailto:info@amnstx.com">info@amnstx.com</a><br><a href="https://www.amnstx.com">www.amnstx.com</a></p></div>
+<div><h4>Important Notice</h4><p>AMNS TX is not a law firm and cannot provide legal advice, choose documents, draft documents, or explain legal rights. Clients must provide complete documents and acceptable identification.</p></div>
+</footer>
+<div class="quick-actions" aria-label="Quick contact actions">
+  <a href="tel:2144715358">Call</a>
+  <a href="sms:4692155434">Text</a>
+  <a href="booking.html">Book Online</a>
+</div></body>
+</html>
